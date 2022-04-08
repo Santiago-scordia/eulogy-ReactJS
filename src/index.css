@@ -14,8 +14,13 @@ code {
 
 .buttong {
   margin-right: 15px;
+
 }
 
 .buttonw {
-  margin-top: 20px;
+  margin-bottom: 15px;
+}
+
+.margincrt{
+  margin-top: 15px;
 }

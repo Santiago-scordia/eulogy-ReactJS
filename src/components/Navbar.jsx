@@ -3,9 +3,6 @@ import CartWidget from './CartWidget';
 import logo from '../assets/logo.png';
 
 
-
-
-
 function NavBar() {
     return (
       <>
