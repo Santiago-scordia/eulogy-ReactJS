@@ -14,8 +14,6 @@ const ItemListContainer = () => {
         pedirDatos()
     }, [2000])
 
-    console.log(cuadros, "Soy la data");
-
     return (
         <>
             <ItemList productos={cuadros}/>
