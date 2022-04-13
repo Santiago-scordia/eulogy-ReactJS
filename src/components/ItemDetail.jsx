@@ -1,5 +1,8 @@
 import ItemCount from './ItemCount';
-import { Container } from 'react-bootstrap';
+import { Spinner } from 'react-bootstrap';
+import '../index.css';
+import '../App.css';
+
 
 const ItemDetail = ({ item }) => {
 
@@ -10,23 +13,32 @@ const ItemDetail = ({ item }) => {
     console.log()
 
     return (
-        <>  
-        <Container>
-            <div className='DetailContainer'>
-                <div className='WrapperDetail'>
-                    <div className='ImgContainer'>
-                        <img alt="" className='ImageDetail' src={item.img} />
-                    </div>
-                    <div className='InfoContainer'>
-                        <div>{item.title}</div>
-                        <div>{item.description}</div>
-                        <div>$ {item.price}</div>
-                        <div>{item.stock} unidades en stock</div>
-                    </div>
-                    <ItemCount stock={item.stock} initial={1} onAdd={onAdd} />
+        <>  {
+            item && item.img
+            ?
+        
+            <div className="card mb-3 margincrt container-xxxl" >
+                <div className="row g-0">
+                <div className="col-md-4">
+                <img src={item.img}  className="img-fluid rounded-start" alt="cuadro" />
+                </div>
+                <div className="col-md-8">
+                    <div className="card-body">
+                     <h2 className="card-title text-center">{item.title}</h2>
+                            <p className="card-text text-center">{item.description}</p>
+                             <h4 className="card-text text-center">${item.price}</h4>
+                             <p className="marginbtn"><ItemCount  stock={item.stock}  initial={1} onAdd={onAdd} /></p>
+                    </div>  
+                 </div>
                 </div>
             </div>
-            </Container>
+            :<div className="App">  
+                <br /><br /><br /><br />
+                <Spinner  size="bg" animation="border" role="status">
+                <span className="visually-hidden ">Loading...</span>
+                </Spinner>
+            </div> 
+            }
         </>
     );
 }

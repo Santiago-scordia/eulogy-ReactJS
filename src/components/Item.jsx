@@ -1,5 +1,6 @@
 import React from 'react'
-import { Card, Col } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
+import { Card, Col, Button } from 'react-bootstrap';
 import ItemCount from './ItemCount'
 import '../index.css';
 
@@ -7,7 +8,7 @@ const onAdd = (qty) => {
     alert("Agregaste " + qty + " items al carrito.");
 }
 
-export default function Item ({ id,title,price,img }){
+export default function Item ({ id,title,price,img,stock}){
     return(
         <>
         <Col>
@@ -15,9 +16,10 @@ export default function Item ({ id,title,price,img }){
             <Card.Img variant="top" src={img} />
             <Card.Body>
                 <Card.Title>{title}</Card.Title>
-                    <Card.Text>{price}</Card.Text>
+                    <Card.Text>${price}</Card.Text>
             </Card.Body>
-            <ItemCount stock={5} initial={1} onAdd={onAdd}/>
+            <Link to={`/item/${id}`}><Button variant="dark" className="buttonw marginleft">Ver Mas</Button></Link>
+            <ItemCount stock={stock} initial={1} onAdd={onAdd}/>
         </Card>
         </Col>
         </>

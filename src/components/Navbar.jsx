@@ -1,6 +1,7 @@
 import { Navbar, Nav, Container } from 'react-bootstrap';
 import CartWidget from './CartWidget';
 import logo from '../assets/logo.png';
+import { Link } from "react-router-dom";
 
 
 function NavBar() {
@@ -8,7 +9,8 @@ function NavBar() {
       <>
         <Navbar bg="dark" variant="dark">
             <Container>
-                <Navbar.Brand href="#home">
+                <Navbar.Brand>
+                <Link to='/' style={{textDecoration: "none", color: "white"}} >
                      <img
                      alt=""
                      src={logo}
@@ -17,19 +19,20 @@ function NavBar() {
                      className="d-inline-block"
                      />{' '}
                      Ǝ U ᒧ O ⅁ Y
+                     </Link>
                 </Navbar.Brand>
                 <Nav className="justify-content-center" activeKey="/home">
                     <Nav.Item>
-                    <Nav.Link href="/home">Categoria 1</Nav.Link>
+                    <Nav.Link href="/home"><Link to='/category/1' style={{textDecoration: "none", color: "white"}}>Psicodelicos</Link></Nav.Link>
                     </Nav.Item>
                     <Nav.Item>
-                    <Nav.Link href="/home">Categoria 2</Nav.Link>
+                    <Nav.Link href="/home"><Link to='/category/2' style={{textDecoration: "none", color: "white"}}>Geometricos</Link></Nav.Link>
                     </Nav.Item>
                     <Nav.Item>
-                    <Nav.Link href="/home">Categoria 3</Nav.Link>
+                    <Nav.Link href="/home"><Link to='/category/3' style={{textDecoration: "none", color: "white"}}>Estructurales</Link></Nav.Link>
                     </Nav.Item>
                     <Nav.Item>
-                    <Nav.Link href="/home">Categoria 4</Nav.Link>
+                    <Nav.Link href="/home"><Link to='/category/4' style={{textDecoration: "none", color: "white"}}>Formas</Link></Nav.Link>
                     </Nav.Item>
                  </Nav>
               <CartWidget />
