@@ -2,7 +2,7 @@ const data = [
     {
         id: 1,
         title:"Cuadro 1",
-        price:"$100",
+        price:"100",
         description: "Cuadro Psicodelico",
         stock: 100,
         img:"https://i.ibb.co/Pj48Fft/producto1.jpg"
@@ -10,7 +10,7 @@ const data = [
     {
         id: 2,
         title:"Cuadro 2",
-        price:"$200",
+        price:"200",
         description: "Cuadro Psicodelico",
         stock: 100,
         img:"https://i.ibb.co/MGNRM1z/producto2.jpg"
@@ -18,7 +18,7 @@ const data = [
     {
         id: 3,
         title:"Cuadro 3",
-        price:"$300",
+        price:"300",
         description: "Cuadro Psicodelico",
         stock: 100,
         img:"https://i.ibb.co/Pj48Fft/producto1.jpg"
@@ -26,7 +26,7 @@ const data = [
     {
         id: 4,
         title:"Cuadro 4",
-        price:"$1000",
+        price:"1000",
         description: "Cuadro Psicodelico",
         stock: 100,
         img:"https://i.ibb.co/MGNRM1z/producto2.jpg"
@@ -34,7 +34,7 @@ const data = [
     {
         id: 5,
         title:"Cuadro 5",
-        price:"$5000",
+        price:"5000",
         description: "Cuadro Psicodelico",
         stock: 100,
         img:"https://i.ibb.co/Pj48Fft/producto1.jpg"
@@ -42,7 +42,7 @@ const data = [
     {
         id: 6,
         title:"Cuadro 6",
-        price:"$6000",
+        price:"6000",
         description: "Cuadro Psicodelico",
         stock: 100,
         img:"https://i.ibb.co/MGNRM1z/producto2.jpg"
@@ -50,7 +50,7 @@ const data = [
     {
         id: 7,
         title:"Cuadro 7",
-        price:"$7000",
+        price:"7000",
         description: "Cuadro Psicodelico",
         stock: 100,
         img:"https://i.ibb.co/Pj48Fft/producto1.jpg"
@@ -58,7 +58,7 @@ const data = [
     {
         id: 8,
         title:"Cuadro 8",
-        price:"$9000",
+        price:"9000",
         description: "Cuadro Psicodelico",
         stock: 100,
         img:"https://i.ibb.co/MGNRM1z/producto2.jpg"
