@@ -1,18 +1,7 @@
-/*import { Button } from 'react-bootstrap';
-import { Link } from 'react-router-dom';
-
-const Cart = ({}) => {
-    return (
-        <>
-            <Link to='/cart' style={{textDecoration: "none"}}><Button >CheckOut</Button></Link>
-        </>
-    );
-}
-
-export default Cart;*/
 import { useContext } from 'react';
 import '../index.css';
 import { CartContext } from './CartContext';
+import { Button } from 'react-bootstrap';
 
 
 const Cart = () => {
@@ -21,7 +10,7 @@ const Cart = () => {
     return (
         <div className='WrapperCart'>
         <div className='TitleCart'>YOUR CART</div>
-        <button onClick={test.clear}>ELIMINAR TODOS</button>
+        <Button className='btnCart' onClick={test.clear}>ELIMINAR TODOS</Button>
         {
          test.cartList.length > 0 && (
             <div className='ContentCart'>
@@ -34,7 +23,7 @@ const Cart = () => {
                                     <span>
                                         <b>Product:</b> {item.title}
                                     </span>
-                                    <button type="filled" onClick={() => test.deleteItem(item.id)}>ELIMINAR</button>
+                                    <Button type="filled" onClick={() => test.deleteItem(item.id)}>ELIMINAR</Button>
                                 </div>
                             </div>
                             <div className='PriceDetail'>
@@ -43,8 +32,9 @@ const Cart = () => {
                                 </div>
                                 <p className='ProductPrice'>$ {item.price}</p>
                             </div>
+                            
                         </div>
-                        
+                       
                     )
                 }
             </div>

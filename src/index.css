@@ -31,7 +31,7 @@ code {
 }
 
 .marginleft{
-  margin-left: 49%;
+  margin-left: 37%;
 }
 
 
@@ -91,4 +91,8 @@ code {
 .ProductPrice{
     font-size: 30px;
     font-weight: 200;
+}
+
+.btnCart{
+  margin-bottom: 20px;
 }
