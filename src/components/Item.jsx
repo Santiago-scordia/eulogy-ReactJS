@@ -19,7 +19,6 @@ export default function Item ({ id,title,price,img,stock}){
                     <Card.Text>${price}</Card.Text>
             </Card.Body>
             <Link to={`/item/${id}`}><Button variant="dark" className="buttonw marginleft">Ver Mas</Button></Link>
-            <ItemCount stock={stock} initial={1} onAdd={onAdd}/>
         </Card>
         </Col>
         </>

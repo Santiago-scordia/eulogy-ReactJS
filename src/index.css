@@ -33,3 +33,62 @@ code {
 .marginleft{
   margin-left: 49%;
 }
+
+
+
+/*Cart*/
+
+.WrapperCart{
+    margin-top: 70px;
+    padding: 20px;
+    
+}
+
+.TitleCart{
+    font-size: 30px;
+    font-weight: 300;
+    text-align: center;
+    
+}
+
+.ContentCart{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+.Product{
+    display: flex;
+    justify-content: space-between;
+}
+
+.ProductDetail{
+    flex: 2;
+    display: flex;
+}
+
+.ImageCart{
+    width: 200px;
+    margin-bottom: 20px;
+}
+
+.Details{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.PriceDetail{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.ProductPrice{
+    font-size: 30px;
+    font-weight: 200;
+}

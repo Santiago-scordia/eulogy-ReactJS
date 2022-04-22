@@ -1,17 +1,20 @@
 import ItemCount from './ItemCount';
-import { useState } from 'react';
+import { useState, useContext } from 'react';
 import { Spinner } from 'react-bootstrap';
 import '../index.css';
 import '../App.css';
-import Cart from "./Cart";
+import GoToCart from "./GoToCart";
+import { CartContext } from "./CartContext";
 
 
 const ItemDetail = ({ item }) => {
     const [itemCount, setItemCount] = useState(0);
+    const test = useContext(CartContext);
 
     const onAdd = (qty) => {
         alert("You have selected " + qty + " items.");
         setItemCount(qty);
+        test.addItem(item);
     }
 
     console.log()
@@ -34,7 +37,7 @@ const ItemDetail = ({ item }) => {
                              <p className="marginbtn">{
                                 itemCount === 0
                                 ? <ItemCount stock={item.stock} initial={itemCount} onAdd={onAdd} />
-                                : <Cart/>
+                                : <GoToCart/>
                             }</p>
                     </div>  
                  </div>

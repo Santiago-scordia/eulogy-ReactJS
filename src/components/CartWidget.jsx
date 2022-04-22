@@ -3,8 +3,8 @@ import shoppingcart from '../assets/shopping-cart.png';
 import { Link } from 'react-router-dom';
 
 
-
 function CartWidget() {
+
     return (
       <>
         <Nav.Link>

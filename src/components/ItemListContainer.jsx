@@ -10,7 +10,6 @@ const ItemListContainer = () => {
     const [cuadros, setCuadros] = useState([])
     const { idCategory } = useParams();
 
-    console.log(idCategory);
 
     useEffect(() => {
         customFetch(2000, data.filter(item => {
