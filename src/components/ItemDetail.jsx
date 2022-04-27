@@ -12,9 +12,9 @@ const ItemDetail = ({ item }) => {
     const test = useContext(CartContext);
 
     const onAdd = (qty) => {
-        alert("You have selected " + qty + " items.");
+        alert("Agregaste " + qty + " items al carrito.");
         setItemCount(qty);
-        test.addItem(item);
+        test.addItem(item,qty);
     }
 
     console.log()

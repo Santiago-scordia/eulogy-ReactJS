@@ -30,8 +30,8 @@ const ItemCount = ({ stock, initial,  onAdd }) => {
           </ButtonGroup>
           {
               stock
-              ? <Button variant="primary" color="primary" onClick={() => onAdd(count)}>Add To Cart</Button>
-              : <Button variant="primary" disabled>Out of stock</Button>
+              ? <Button variant="primary" color="primary" onClick={() => onAdd(count)}>Agregar al carrito</Button>
+              : <Button variant="primary" disabled>Falta de stock</Button>
           }
       </Container>
   );

@@ -1,14 +1,10 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
 import { Card, Col, Button } from 'react-bootstrap';
-import ItemCount from './ItemCount'
 import '../index.css';
 
-const onAdd = (qty) => {
-    alert("Agregaste " + qty + " items al carrito.");
-}
 
-export default function Item ({ id,title,price,img,stock}){
+export default function Item ({ id,title,price,img}){
     return(
         <>
         <Col>
