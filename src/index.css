@@ -95,4 +95,14 @@ code {
 
 .btnCart{
   margin-bottom: 20px;
+  align-items: right;
+}
+
+.btnCart2{
+  margin-bottom: 20px;
+}
+
+.btnsection{
+  display: flex;
+  justify-content: space-between;
 }
