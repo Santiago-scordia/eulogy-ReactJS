@@ -23,16 +23,16 @@ function NavBar() {
                 </Navbar.Brand>
                 <Nav className="justify-content-center" activeKey="/home">
                     <Nav.Item>
-                    <Nav.Link href="/home"><Link to='/category/1' style={{textDecoration: "none", color: "white"}}>Psicodelicos</Link></Nav.Link>
+                    <Nav.Link href="/home"><Link to='/category/Psicodelicos' style={{textDecoration: "none", color: "white"}}>Psicodelicos</Link></Nav.Link>
                     </Nav.Item>
                     <Nav.Item>
-                    <Nav.Link href="/home"><Link to='/category/2' style={{textDecoration: "none", color: "white"}}>Geometricos</Link></Nav.Link>
+                    <Nav.Link href="/home"><Link to='/category/Geometricos' style={{textDecoration: "none", color: "white"}}>Geometricos</Link></Nav.Link>
                     </Nav.Item>
                     <Nav.Item>
-                    <Nav.Link href="/home"><Link to='/category/3' style={{textDecoration: "none", color: "white"}}>Estructurales</Link></Nav.Link>
+                    <Nav.Link href="/home"><Link to='/category/Estructurales' style={{textDecoration: "none", color: "white"}}>Estructurales</Link></Nav.Link>
                     </Nav.Item>
                     <Nav.Item>
-                    <Nav.Link href="/home"><Link to='/category/4' style={{textDecoration: "none", color: "white"}}>Formas</Link></Nav.Link>
+                    <Nav.Link href="/home"><Link to='/category/Formas' style={{textDecoration: "none", color: "white"}}>Formas</Link></Nav.Link>
                     </Nav.Item>
                  </Nav>
               <CartWidget />
