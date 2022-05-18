@@ -1,6 +1,6 @@
 # Eulogy Hilorama - Arte con Hilos
 
- ![image]("https://github.com/Santiago-scordia/eulogy-scordia/blob/master/Eulogy.gif ")
+ ![image](https://github.com/Santiago-scordia/eulogy-scordia/blob/master/Eulogy.gif)
 
 
 ## Proyecto para curso de ReactJS
