@@ -1,6 +1,6 @@
 # Eulogy Hilorama - Arte con Hilos
 
- ![image]( https://github.com/mmxifra/mmx-designStore/blob/master/mmxDesignStore.gif)
+ ![image]( )
 
 
 ## Proyecto para curso de ReactJS
